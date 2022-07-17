@@ -21,8 +21,29 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: aquamarine;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: fit-content;
 }
 
+.form {
+  display:grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 3rem; 
+  justify-content: center;
+  align-items: center;
+}
+
+.length-amount-container {
+  display: flex;
+  align-items: center;
+}
 header {
   text-align: center;
   padding: 20px;
@@ -31,15 +52,15 @@ header {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: aquamarine;
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+  max-width: 600px;
+  max-height: 100px;
 }
 
 .card-header::after {
@@ -50,9 +71,18 @@ header {
   height: 2px;
 }
 
-.card-body {
-  min-height: 100px;
+.password-display{
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #333;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  border-radius: .5rem;
 }
+
 
 .card-footer {
   text-align: center;
